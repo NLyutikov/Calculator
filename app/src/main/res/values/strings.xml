@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="FirstNum">Введите первое число</string>
+    <string name="SecondNum">Введите второе число</string>
+    <string name="PlusButton">+</string>
+    <string name="MultiplyButton">*</string>
+    <string name="MinusButton">-</string>
+    <string name="DivisionButton">/</string>
+    <string name="ResultView">Здесь появится ваш ответ</string>
+</resources>

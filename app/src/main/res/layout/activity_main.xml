@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="#808080">
+
+    <EditText
+            android:id="@+id/FirstNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/FirstNum"
+            android:text=""
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:padding="15dp"
+            android:layout_margin="20dp"
+            android:background="#FFFFFF"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+    />
+
+    <EditText
+            android:id="@+id/SecondNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/SecondNum"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@id/FirstNum"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:padding="15dp"
+            android:layout_margin="20dp"
+            android:background="#FFFFFF"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+    />
+
+    <Button
+            android:id="@+id/PlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PlusButton"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/SecondNum"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/MinusButton"
+            android:layout_margin="20dp"
+            android:paddingHorizontal="50dp"
+    />
+
+    <Button
+            android:id="@+id/MinusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MinusButton"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/SecondNum"
+            app:layout_constraintLeft_toRightOf="@id/PlusButton"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="20dp"
+            android:paddingHorizontal="50dp"
+    />
+
+    <Button
+            android:id="@+id/MultiplyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MultiplyButton"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/PlusButton"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/DivisionButton"
+            android:layout_margin="20dp"
+            android:paddingHorizontal="50dp"
+    />
+
+    <Button
+            android:id="@+id/DivisionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DivisionButton"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/MinusButton"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/MultiplyButton"
+            android:layout_margin="20dp"
+            android:paddingHorizontal="50dp"
+
+    />
+
+    <TextView
+            android:id="@+id/ResultView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ResultView"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/MultiplyButton"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:padding="15dp"
+            android:layout_margin="20dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+    />
+
+</android.support.constraint.ConstraintLayout>
